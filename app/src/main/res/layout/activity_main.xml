@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_marginTop="40dp"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/spinner_sexo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:hint="@string/digite_sua_idade"
+            android:layout_marginTop="15dp"
+            android:id="@+id/idade"
+            android:inputType="number"
+            android:maxLength="20"
+            android:digits="1234567890"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/calcular"
+        android:fontFamily="@font/retrofia"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:id="@+id/calcular"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/cyan"
+        android:drawableRight="@drawable/baseline_calculate_24"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/retrofia"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:backgroundTint="@color/cyan_fundo"
+        android:padding="2dp"
+        android:text=""
+        android:id="@+id/result"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="100dp"
+        android:text="@string/nome" />
+
+</LinearLayout>
